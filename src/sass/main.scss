@@ -1,0 +1,52 @@
+// Topics to discuss:
+// - Better code organization with partials
+// - Styling with default variablesiables (!default keyword)
+// so called "at-rules"
+// partials vs modules
+// @import in Sass vs CSS
+// @import can be used with plain CSS files
+// why should we use @use instead of @import
+// migration tool
+
+//Exercises:
+// Apply variables, mixins and base clasess by importing them from partials
+
+body {
+  background-image: url("walpaper.jpg");
+  background-size: cover;
+  
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  header {
+
+    border: {
+      bottom: 1px solid;
+      color: lightgray;
+    }
+
+    padding: 10px;
+  }
+
+  .content {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  footer {
+    border: {
+      top: 1px solid;
+      color: lightgray;
+    }
+
+    color: #94979e;
+    font-size: 12px;
+    text-align: right;
+    padding: 10px;
+  }
+}

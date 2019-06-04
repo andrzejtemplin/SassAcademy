@@ -1,0 +1,7 @@
+@mixin card-shadow($parameters) {
+    &:hover {
+        -moz-box-shadow: $parameters;
+        -webkit-box-shadow: $parameters;
+        box-shadow: $parameters;
+    }
+}

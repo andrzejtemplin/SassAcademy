@@ -1,0 +1,46 @@
+@use 'helper/variables' as var;
+@use 'helper/mixins' as m;
+@use 'helper/placeholders';
+
+body {
+  background-image: url("walpaper.jpg");
+  background-size: cover;
+}
+
+.card {
+  @include m.card-shadow(var.$card-shadow-parameters);
+  @extend %base-card;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  header {
+    @extend %base-header;
+
+    border: {
+      bottom: 1px solid;
+      color: lightgray;
+    }
+
+    padding: 10px;
+  }
+
+  .content {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  footer {
+    border: {
+      top: 1px solid;
+      color: lightgray;
+    }
+
+    color: #94979e;
+    font-size: 12px;
+    text-align: right;
+    padding: 10px;
+  }
+}

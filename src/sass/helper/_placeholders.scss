@@ -1,0 +1,28 @@
+@use 'variables';
+
+%base-header {
+    font: {
+        weight: bold;
+        size: 24px;
+        color: #535559;
+    }
+}
+
+%base-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: variables.$content-text-color;
+    background-color: variables.$card-background-color;
+    width: 400px;
+
+    border: {
+        width: 1px;
+        style: solid;
+        color: variables.$border-color;
+        radius: 10px;
+    }
+}
