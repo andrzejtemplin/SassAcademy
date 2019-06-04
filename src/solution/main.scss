@@ -1,0 +1,64 @@
+// Topics to discuss:
+// - variables' scope (locals vs globals)
+// - shadowing
+// - default variables
+// - types: Numbers, Strings, Colors, Lists, Maps, boolean,  null, Functions
+
+$card-border-color: lightgray;
+$card-section-padding: 10px;
+$card-border-style: 1px solid;
+
+body {
+    background-image: url("walpaper.jpg");
+    background-size: cover;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #535559;
+    width: 300px;
+
+    border: {
+        style: solid;
+        width: 1px;
+        color: $card-border-color;
+        radius: 10px;
+    }
+
+    header {
+        font: {
+            weight: bold;
+            size: 24px;
+        }
+
+        border: {
+            bottom: $card-border-style;
+            color: $card-border-color;
+        }
+
+        padding: $card-section-padding;
+    }
+
+    .content {
+        font-size: 18px;
+        padding: $card-section-padding;
+    }
+
+    footer {
+        border: {
+            top: $card-border-style;
+            color: $card-border-color;
+        }
+
+        color: #94979e;
+        font-size: 12px;
+        text-align: right;
+        padding: $card-section-padding;
+    }
+}
