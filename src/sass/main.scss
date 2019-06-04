@@ -1,0 +1,77 @@
+// Topics to discuss:
+// - the purpose of mixins,
+//
+//Exercises: 
+// 1) There are grammar errors and typings. Use mixins to underline typings with a red wavy line and grammar errors with 
+// a green wavy line.
+// Hint: The errors are marked with <span> elements in the index.html file.
+// 2) Use mixin to drop shadow when the card is hoovered.
+
+@mixin spelling-check($color) {
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+  text-decoration-color: $color;
+}
+
+@mixin card-shadow($color) {
+  &:hover {
+    -moz-box-shadow: 3px 3px 5px 6px $color;
+    -webkit-box-shadow: 3px 3px 5px 6px $color;
+    box-shadow: 3px 3px 5px 6px $color;
+  }
+}
+
+body {
+  background-image: url("walpaper.jpg");
+  background-size: cover;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #535559;
+  width: 300px;
+
+  border: {
+    style: solid;
+    width: 1px;
+    color: lightgray;
+    radius: 10px;
+  }
+
+  header {
+    font: {
+      weight: bold;
+      size: 24px;
+    }
+
+    border: {
+      bottom: 1px solid;
+      color: lightgray;
+    }
+
+    padding: 10px;
+  }
+
+  .content {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  footer {
+    border: {
+      top: 1px solid;
+      color: lightgray;
+    }
+
+    color: #94979e;
+    font-size: 12px;
+    text-align: right;
+    padding: 10px;
+  }
+}
