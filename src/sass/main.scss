@@ -1,0 +1,25 @@
+// Topics to discuss:
+// - the purpose of extending classes
+// - classes prefixed with % - so called placeholder classes
+// - difference between mixins and extendig, what to choose.
+//
+// Exercise: 
+// Using .base-header class selector: 
+// 1) create three headers: h1 - 36px height, h2 - 32px height, h3 - 26px height and italic.
+// 2) convert the base-header class so that it becomes placeholder class.
+
+
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.base-header {
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #4b4c4f;
+    padding: 15px;
+}

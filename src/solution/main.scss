@@ -1,0 +1,22 @@
+%base-header {
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #4b4c4f;
+    padding: 15px;
+}
+
+h1 {
+    @extend %base-header;
+}
+
+h2 {
+    @extend %base-header;
+    font-size: 32px;
+}
+
+h3 {
+    @extend %base-header;
+    font-size: 26px;
+    font-style: italic;
+}
