@@ -1,0 +1,38 @@
+body {
+  background-image: url("walpaper.jpg");
+  background-size: cover;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #535559;
+  width: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  border-radius: 10px;
+}
+.card header {
+  font-weight: bold;
+  font-size: 24px;
+  border-bottom: 1px solid;
+  border-color: lightgray;
+  padding: 10px;
+}
+.card .content {
+  font-size: 18px;
+  padding: 10px;
+}
+.card footer {
+  border-top: 1px solid;
+  border-color: lightgray;
+  color: #94979e;
+  font-size: 12px;
+  text-align: right;
+  padding: 10px;
+}

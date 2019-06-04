@@ -1,0 +1,25 @@
+%base-header {
+    font: {
+        weight: bold;
+        size: 24px;
+        color: #535559;
+    }
+}
+
+%base-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $content-text-color;
+    width: 400px;
+
+    border: {
+        width: 1px;
+        style: solid;
+        color: $border-color;
+        radius: 10px;
+    }
+}
