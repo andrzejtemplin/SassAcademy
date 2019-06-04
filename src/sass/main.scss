@@ -1,0 +1,75 @@
+//Exercise 1: transform rotate card 30 degrees using mixin and string interpolation
+//Exercise 1: replace icons' definition using mixins and interpolationg
+
+body {
+  background-image: url("walpaper.jpg");
+  background-size: cover;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #535559;
+  width: 300px;
+
+  border: {
+    style: solid;
+    width: 1px;
+    color: lightgray;
+    radius: 10px;
+  }
+
+  header {
+
+    .icon-close {
+     background: url("close.png") no-repeat;
+     background-size: cover;
+     height: 10px;
+     width: 10px;
+     display: inline-block;
+     float: right;
+    }
+
+    font: {
+      weight: bold;
+      size: 24px;
+    }
+
+    border: {
+      bottom: 1px solid;
+      color: lightgray;
+    }
+
+    padding: 10px;
+  }
+
+  .content {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  footer {
+    border: {
+      top: 1px solid;
+      color: lightgray;
+    }
+
+    color: #94979e;
+    font-size: 12px;
+    text-align: right;
+    padding: 2px;
+
+    .icon-time {
+      background: url("time.png") no-repeat;
+      background-size: cover;
+      height: 10px;
+      width: 10px;
+      display: inline-block;
+     }
+  }
+}

@@ -1,0 +1,13 @@
+@mixin spelling-check($color) {
+    text-decoration-style: wavy;
+    text-decoration-line: underline;
+    text-decoration-color: $color;
+}
+
+@mixin card-shadow($card-shadow-parameters) {
+    &:hover {
+        -moz-box-shadow: $card-shadow-parameters;
+        -webkit-box-shadow: $card-shadow-parameters;
+        box-shadow: $card-shadow-parameters;
+    }
+}
