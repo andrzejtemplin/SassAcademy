@@ -36,8 +36,8 @@ function startServer() {
 }
 
 function openBrowser() {
-   return src('./dist/index.html')
-    .pipe(open({uri: 'http://localhost:8080/'}));
+    return src('./dist/index.html', { allowEmpty: true })
+        .pipe(open({ uri: 'http://localhost:8080/' }));
 }
 
 exports.default = parallel(build, startServer, watchForSassChanges, watchForChanges, openBrowser);
