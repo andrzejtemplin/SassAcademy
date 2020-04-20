@@ -17,9 +17,6 @@ body {
   border-color: lightgray;
   border-radius: 10px;
 }
-.card:hover {
-  box-shadow: 3px 3px 5px 6px coral;
-}
 .card header {
   font-weight: bold;
   font-size: 24px;
