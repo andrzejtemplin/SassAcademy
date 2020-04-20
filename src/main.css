@@ -1,22 +1,28 @@
-.paragraph-1, .paragraph-2, .paragraph-3, .paragraph-4 {
+.paragraph-4, .paragraph-3, .paragraph-2, .paragraph-1 {
   font-family: Arial, Helvetica, sans-serif;
-  color: #4b4c4f; }
+  color: #4b4c4f;
+}
 
 body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+}
 
 .paragraph-1 {
-  font-size: 24pt; }
+  font-size: 24pt;
+}
 
 .paragraph-2 {
-  font-size: 18pt; }
+  font-size: 18pt;
+}
 
 .paragraph-3 {
-  font-size: 14pt; }
+  font-size: 14pt;
+}
 
 .paragraph-4 {
   font-size: 14pt;
-  font-style: italic; }
+  font-style: italic;
+}
