@@ -1,63 +1,73 @@
-@mixin transform($expression) {
-  -webkit-transform: #{$expression};
-  -moz-transform: #{$expression};
-  transform: #{$expression};
+@mixin icon($iconName) {
+  background: url("assets/#{$iconName}.png") no-repeat;
+  background-size: cover;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
 }
 
-.box { @include transform(rotate(30deg)); }
 
 body {
-    background-image: url("walpaper.jpg");
-    background-size: cover;
+  background-image: url("walpaper.jpg");
+  background-size: cover;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #535559;
+  width: 300px;
+
+  border: {
+    style: solid;
+    width: 1px;
+    color: lightgray;
+    radius: 10px;
   }
-  
-  .card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: fade-out(white, 0.7);
-    color: #535559;
-    width: 300px;
-  
+
+  header {
+
+    .icon-close {
+      @include icon("close");
+      float: right;
+    }
+
+    font: {
+      weight: bold;
+      size: 24px;
+    }
+
     border: {
-      style: solid;
-      width: 1px;
+      bottom: 1px solid;
       color: lightgray;
-      radius: 10px;
     }
-  
-    header {
-      font: {
-        weight: bold;
-        size: 24px;
-      }
-  
-      border: {
-        bottom: 1px solid;
-        color: lightgray;
-      }
-  
-      padding: 10px;
+
+    padding: 10px;
+  }
+
+  .content {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  footer {
+    border: {
+      top: 1px solid;
+      color: lightgray;
     }
-  
-    .content {
-      font-size: 18px;
-      padding: 10px;
-    }
-  
-    footer {
-      border: {
-        top: 1px solid;
-        color: lightgray;
-      }
-  
-      color: #94979e;
-      font-size: 12px;
-      text-align: right;
-      padding: 10px;
+
+    color: #94979e;
+    font-size: 12px;
+    text-align: right;
+    padding: 2px;
+
+    .icon-time {
+      @include icon("time");
     }
   }
-  
+}
