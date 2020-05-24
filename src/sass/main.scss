@@ -2,10 +2,10 @@
 // - the purpose of mixins,
 //
 //Exercises: 
-// 1) There are grammar errors and typings. Use mixins to underline typings with a red wavy line and grammar errors with 
+// 1) There are grammar errors and typos. Use mixins to underline typos with a red wavy line and grammar errors with 
 // a green wavy line.
 // Hint: The errors are marked with <span> elements in the index.html file.
-// 2) Use mixin to drop shadow when the card is hoovered.
+// 2) Use mixin to drop shadow when the card is hovered.
 
 @mixin spelling-check($color) {
   text-decoration-style: wavy;
