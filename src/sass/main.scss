@@ -9,7 +9,9 @@
 // migration tool
 
 //Exercises:
-// Apply variables, mixins and base clasess by importing them from partials
+// 1) Import variables, mixins and clasess from the partials
+// 2) Apply aliasing for the imported items
+// 3) Import and overwrite variables' default values
 
 body {
   background-image: url("walpaper.jpg");
