@@ -6,3 +6,4 @@ dist/index.html
 dist/main.css
 .DS_Store
 src/.DS_Store
+src/main.css
