@@ -1,17 +1,16 @@
 // Topics to discuss:
 // - Better code organization with partials
-// - Styling with default variablesiables (!default keyword)
+// - overwrite default values (!default keyword)
 // so called "at-rules"
-// partials vs modules
+// partials and module pattern
 // @import in Sass vs CSS
 // @import can be used with plain CSS files
 // why should we use @use instead of @import
-// migration tool
 
 //Exercises:
-// 1) Import variables, mixins and clasess from the partials
-// 2) Apply aliasing for the imported items
-// 3) Import and overwrite variables' default values
+// 1) Use modules: variables, mixins and clasess
+// 2) Apply aliasing for the modules
+// 3) Overwrite module's variables default values
 
 body {
   background-image: url("walpaper.jpg");
