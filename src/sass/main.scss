@@ -3,8 +3,8 @@
 // - when to use them
 // - explain the beneath example
 
-@import "helper/variables";
-@import "helper/placeholders";
+@use "helper/variables" as vars;
+@use "helper/placeholders";
 
 body {
     position: absolute;
@@ -13,12 +13,12 @@ body {
     transform: translate(-50%, -50%);
 }
 
-@each $paragraph in map-keys($paragraph-types) {
+@each $paragraph in map-keys(vars.$paragraph-types) {
     .#{($paragraph)} {
-        font-size: map-get($paragraph-types, $paragraph);
+        font-size: map-get(vars.$paragraph-types, $paragraph);
         @extend %paragraph;
 
-        @debug #{map-get($paragraph-types, $paragraph)};
+        @debug #{map-get(vars.$paragraph-types, $paragraph)};
 
         @if $paragraph=="paragraph-4" {
             font-style: italic;
