@@ -1,64 +1,13 @@
-// Topics to discuss:
-// - variables' scope (locals vs globals),
-// - shadowing,
-// - default variables,
-// - types: Numbers, Strings, Colors, Lists, Maps, boolean,  null, Functions.
- 
-// Exercises: 
-// 1) replace recurring values with variables
-// 2) play with variable shadowing
 
-body {
-    background-image: url("walpaper.jpg");
-    background-size: cover;
+$primary-color: ("color":red, "higlight":rgb(248, 159, 159));
+$secondary-color: ("color":green, "higlight":rgb(134, 247, 134));
+
+.primary {
+    font-size: 36pt;
+    color: map-get($primary-color,"color");
 }
 
-.card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    color: #535559;
-    width: 300px;
-
-    border: {
-        style: solid;
-        width: 1px;
-        color: lightgrey;
-        radius: 10px;
-    }
-
-    header {
-        font: {
-            weight: bold;
-            size: 24px;
-        }
-
-        border: {
-            bottom: 1px solid;
-            color: lightgrey;
-        }
-
-        padding: 10px;
-    }
-
-    .content {
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    footer {
-        border: {
-            top: 1px solid;
-            color: lightgrey;
-        }
-
-        color: #94979e;
-        font-size: 12px;
-        text-align: right;
-        padding: 10px;
-    }
+.secondary {
+    font-size: 36pt;
+    color: map-get($secondary-color,"color");
 }
