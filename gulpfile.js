@@ -4,7 +4,7 @@ const connect = require('gulp-connect');
 const open = require('gulp-open');
 const flatten = require('gulp-flatten');
 
-sass.compiler = require('sass');
+sass.compiler = require('node-sass');
 
 function convertToSass() {
     return src('./src/sass/*.scss')
